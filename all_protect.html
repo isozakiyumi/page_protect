@@ -16,30 +16,19 @@
             /*height: 100%;*/
             pointer-events: none;
         }
-        body {
-            width: 100vw;
-
-            /* 選択抑制 */
-            -webkit-touch-callout:none;
-            -webkit-user-select:none;
-            -moz-touch-callout:none;
-            -moz-user-select:none;
-            touch-callout:none;
-            user-select:none;
-        }
     </style>
 
 </head>
 <body oncopy="return false;">
 <h1>Image protect</h1>
 <p>CSS pointer-event + CSS user-select:none; + 念の為　oncopy block</p>
-<a href="index.html">back</a>
+<a href="index.html" ondragstart="return false;">back</a>
 <hr>
 
 <div class="container">
     <h2>Example (in .container) </h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p><a href="https://www.google.com/">link here</a></p>
+    <p><a ondragstart="return false;" href="https://www.google.com/">link here</a></p>
     <h3>外部img</h3>
     <img class="article_img" alt="外部img" src="img.jpg">
     <br>
@@ -48,10 +37,10 @@
     <br>
     <br>
     <h3>画像リンク（外部img）</h3>
-    <a href="https://www.google.com/" style="display: inline-block;"><img class="article_img" alt="button" src="button.png"></a>
+    <a ondragstart="return false;" href="https://www.google.com/" style="display: inline-block;"><img class="article_img" alt="button" src="button.png"></a>
     <br>
     <h3>画像リンク（base64）</h3>
-    <a href="https://www.google.com/" style="display: inline-block;"><img class="article_img" alt="button" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAyCAMAAACd646MAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABGlBMVEWK9/8AAAAVJidEen44ZGdwyc8kQUMIDg4VJSY5Z2qB5+90z9YpSUsMFRYMFhcpSkx00NeC6fEqS00FCQkxWFt83+YJEBEKEhMzXF9KhIglQkQTIySF7vZswccQHR531dwGDAxDd3sGCwt41t0/cHRYnaIjP0FPjZKJ9v40XWBJg4deqa5eqK0zW15MiIyG8PgCAwMDBQWH8flzzdQTIiMFCgqJ9f2I9Px73eSF7fUbLzEEBwcRHyARHh8ECAgtUVQHDQ0SISI0XmFSk5gXKSpir7UxV1pfqq8yWVxKhYklQ0UdNDaI8/s3Y2YeNTdXnKFHgIQYLC0YKyx31NtDeHx62uEnRkhAc3eE6/M6aGsOGRomREYoSEr////KLbsBAAAAAWJLR0Rdnd8wAQAAAAd0SU1FB+YDHgQ3HQ+nbHIAAAEoSURBVFjD7ZLXTsNAEEVnQrHBLeDQU6kOvSShEwOml0BCh///DnaytpJIPKC1IoQ05+FKMw9zdncWgGEYhmGYX4GJP5L09EbRRUkCo/hfkr5+TR8YjKaKRIEMAMO0bCfZ7A8Nu3ZqRE0yOjY+MYlT6ZYkk8WMDMi5+UJh2p2hvjM7Z+K8mgQXALwiLrYkbc+VwiWAZVyhchVgTVtXk2xsitxC50dJqVwB2HZ1KndErastCrOUu7gXSvQOyf4B9Q6PqPRA+TfImxhYlQM8v0NyTDeplEtt30J9Jyd4CgE9yBlieOpmnOMF7eQytiQoXl3jzS3c4X3t4dEWY+pCKaPh5p/E78rFljy/aMFrGuDt/cP/bNCYWt0PA4wvyzKTEFPCMAzDMEx3+Aan3RqGmnBrmgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMi0wMy0zMFQxMzo1NToyOSswOTowMM8OlcUAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjItMDMtMzBUMTM6NTU6MjkrMDk6MDC+Uy15AAAAAElFTkSuQmCC"></a>
+    <a ondragstart="return false;" href="https://www.google.com/" style="display: inline-block;"><img class="article_img" alt="button" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAyCAMAAACd646MAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABGlBMVEWK9/8AAAAVJidEen44ZGdwyc8kQUMIDg4VJSY5Z2qB5+90z9YpSUsMFRYMFhcpSkx00NeC6fEqS00FCQkxWFt83+YJEBEKEhMzXF9KhIglQkQTIySF7vZswccQHR531dwGDAxDd3sGCwt41t0/cHRYnaIjP0FPjZKJ9v40XWBJg4deqa5eqK0zW15MiIyG8PgCAwMDBQWH8flzzdQTIiMFCgqJ9f2I9Px73eSF7fUbLzEEBwcRHyARHh8ECAgtUVQHDQ0SISI0XmFSk5gXKSpir7UxV1pfqq8yWVxKhYklQ0UdNDaI8/s3Y2YeNTdXnKFHgIQYLC0YKyx31NtDeHx62uEnRkhAc3eE6/M6aGsOGRomREYoSEr////KLbsBAAAAAWJLR0Rdnd8wAQAAAAd0SU1FB+YDHgQ3HQ+nbHIAAAEoSURBVFjD7ZLXTsNAEEVnQrHBLeDQU6kOvSShEwOml0BCh///DnaytpJIPKC1IoQ05+FKMw9zdncWgGEYhmGYX4GJP5L09EbRRUkCo/hfkr5+TR8YjKaKRIEMAMO0bCfZ7A8Nu3ZqRE0yOjY+MYlT6ZYkk8WMDMi5+UJh2p2hvjM7Z+K8mgQXALwiLrYkbc+VwiWAZVyhchVgTVtXk2xsitxC50dJqVwB2HZ1KndErastCrOUu7gXSvQOyf4B9Q6PqPRA+TfImxhYlQM8v0NyTDeplEtt30J9Jyd4CgE9yBlieOpmnOMF7eQytiQoXl3jzS3c4X3t4dEWY+pCKaPh5p/E78rFljy/aMFrGuDt/cP/bNCYWt0PA4wvyzKTEFPCMAzDMEx3+Aan3RqGmnBrmgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMi0wMy0zMFQxMzo1NToyOSswOTowMM8OlcUAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjItMDMtMzBUMTM6NTU6MjkrMDk6MDC+Uy15AAAAAElFTkSuQmCC"></a>
     <br>
     <br>
     <h3>youtube</h3>
@@ -76,6 +65,9 @@
     Android chromeで画像長押しできなくなった。（pointer-events: none）<br>
     <br>
     全般、念の為に oncopy="return false;"いれておくか。。
+
+    <br>
+    リンク： ondragstart="return false;"
 </p>
 
 </body>
