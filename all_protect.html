@@ -30,9 +30,9 @@
     </style>
 
 </head>
-<body oncopy="return false;">
+<body oncopy="return false;" oncontextmenu="return false;">
 <h1>ALL protect</h1>
-<p>CSS pointer-event + CSS user-select:none; + 念の為　oncopy block + A タグdragstart抑止</p>
+<p>CSS pointer-event + CSS user-select:none; + 念の為　oncopy block + A タグdragstart抑止 + コンテキストメニュー抑止</p>
 <a href="index.html" >back</a>
 <hr>
 
@@ -78,7 +78,10 @@
     全般、念の為に oncopy="return false;"いれておくか。。
 
     <br>
-    リンク： ondragstart="return false;"
+    リンク：<br>
+    ondragstart = () => { return false; }<br>
+    これだけだとAndroidでリンク上で長押し→「リンクテキストをコピー」でコピーできた（oncopyでは抑止できない。。）。。）ので、コンテキストメニュー抑止（このページはbodyにつけてある）
+
 </p>
 
 <script type="text/javascript">
@@ -91,9 +94,10 @@
         //     e.preventDefault();
         // });
 
-        anchor.ondragstart = function() {
+        anchor.ondragstart = () => {
             return false;
         }
+
     }
 </script>
 
