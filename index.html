@@ -11,21 +11,27 @@
         li {
             margin: 1em 0;
         }
+        li.ng > a {
+            text-decoration: line-through;
+        }
+        li.ng::after {
+            content: " [NG]";
+        }
     </style>
 </head>
 <body>
 <h1>Image Text Protect</h1>
 <ol>
     <li><a href="plain.html">plain html(no protect)</a></li>
-    <li style="text-decoration: line-through;"><a href="oncopy.html">oncopy event</a></li>
-    <li style="text-decoration: line-through;"><a href="pointer_events.html">CSS pointer events</a></li>
-    <li style="text-decoration: line-through;"><a href="layer.html">Layer</a></li>
-    <li style="text-decoration: line-through;"><a href="layer_pointer_event.html">Layer + CSS pointer events</a></li>
-    <li style="text-decoration: line-through;"><a href="layer_pointer_event_context.html">Layer + CSS Pointer event + Context block</a></li>
-    <li style="text-decoration: line-through;"><a href="layer_pointer_event_context2.html">Layer + CSS Pointer event + Context block 2</a></li>
-    <li style="text-decoration: line-through;"><a href="image_protect.html">Image protect</a></li>
+    <li class="ng"><a href="oncopy.html">oncopy event</a></li>
+    <li class="ng"><a href="pointer_events.html">CSS pointer events</a></li>
+    <li class="ng"><a href="layer.html">Layer</a></li>
+    <li class="ng"><a href="layer_pointer_event.html">Layer + CSS pointer events</a></li>
+    <li class="ng"><a href="layer_pointer_event_context.html">Layer + CSS Pointer event + Context block</a></li>
+    <li class="ng"><a href="layer_pointer_event_context2.html">Layer + CSS Pointer event + Context block 2</a></li>
+    <li class="ng"><a href="image_protect.html">Image protect</a></li>
     <li><a href="all_protect.html">ALL protect</a></li>
-    <li style="text-decoration: line-through;"><a href="img_protect2.html">Image protect2</a></li>
+    <li class="ng"><a href="img_protect2.html">Image protect2</a></li>
     <li><a href="usr_drag_none.html">ALL protect( - user drag none)</a></li>
 </ol>
 
